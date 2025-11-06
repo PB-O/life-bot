@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: life-bot
+    env: python
+    region: frankfurt  # или оставь по умолчанию
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: YOUR_USER_ID
+        sync: false
