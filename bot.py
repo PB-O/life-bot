@@ -14,8 +14,8 @@ from PIL import Image, ImageDraw, ImageFont
 # ==========================
 # Настройки
 # ==========================
-BOT_TOKEN = 
-YOUR_USER_ID = 
+BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+YOUR_USER_ID = 123456789
 
 USERS_FILE = "users.json"
 BIRTHDAYS_FILE = "birthdays.json"
@@ -595,3 +595,4 @@ if __name__ == "__main__":
         logging.exception("Критическая ошибка:")
 
         print(f"❌ Бот упал: {e}")
+
